@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: akashtamhankar/website:v5
+        image: akashtamhankar/website:v6
         ports:
         - containerPort: 80
