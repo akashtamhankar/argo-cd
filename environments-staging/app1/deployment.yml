@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: argocd-deployment
-  namespace: argocd 
+  name: bar-deployment
+  namespace: bar 
   labels:
-    app: nginx
+    app: bar
 spec:
-  replicas: 3
+  replicas: 4
   selector:
     matchLabels:
-      app: nginx
+      app: bar
   template:
     metadata:
       labels:
-        app: nginx
+        app: bar
     spec:
       containers:
-      - name: nginx
+      - name: bar
         image: akashtamhankar/website:v5
         ports:
         - containerPort: 80
